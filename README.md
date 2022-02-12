@@ -6,4 +6,3 @@ We might use Onion Protocol to hide ourselves among several other nodes but the 
 <img src="Onion.png" width="500">
 To work around the same, the project works on developing “The Trunk Protocol”, instead of un-wrapping encryption layer on each node it would work to increase the protection by adding another layer using the public key of the receiver, where finally the receiver node decrypts each layer to achieve the requested data without any threats.
 
-<img src="trunk.jpg" width="400">
