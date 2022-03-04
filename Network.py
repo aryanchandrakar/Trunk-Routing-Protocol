@@ -27,7 +27,10 @@ def connect_party_2_network(): # sender and receiver comes in network and connec
 # FORMING NETWORK
 G = nx.complete_graph(10)
 G=nx.relabel_nodes(G, mapping)
-node_1,node_2 = connect_party_2_network()
+node_1,node_2 = connect_party_2_network().
+
+# can pass the choosen nodes as variable to the function too, or simply create a database for the same
+# using txt file here as database
 f=open("client_1.txt",'w')
 f.write(node_1)
 f.close()
