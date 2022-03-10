@@ -114,7 +114,7 @@ def connect_3_4(chan23):
         # sending message
         print(Style.BRIGHT + Fore.RED + "[+] Encrypted message being sent: ", msgenc3072)
         pubnub34.publish().channel("chan-1").message(str(finalmsg3072)).pn_async(my_publish_callback_3_4)
-        print(Style.BRIGHT + Fore.GREEN +"[!] Message forwarded to NODE_4.")
+        print(Style.BRIGHT + Fore.GREEN +"[!] Message forwarded to Receiver.")
     except NameError:
         pass
 
