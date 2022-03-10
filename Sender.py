@@ -69,6 +69,6 @@ def connect():
         print(Style.BRIGHT + Fore.BLUE + "[+] Encrypted message being sent: ", msgenc1024)
         finalmsg1024 = base64.b64encode(msgenc1024)
         pubnub.publish().channel("chan-1").message(str(finalmsg1024)).pn_async(my_publish_callback)
-        print(Style.BRIGHT + Fore.GREEN +"[!] Message forwarded to NODE_2.")
+        print(Style.BRIGHT + Fore.GREEN +"[!] Message forwarded to Realy Node.")
 
 connect() #connect 1 & 2
