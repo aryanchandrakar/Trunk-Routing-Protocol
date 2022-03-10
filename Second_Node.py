@@ -57,7 +57,7 @@ class MySubscribeCallback(SubscribeCallback):
         pass
     def message(self, pubnub, message):
         chan23 = message.message
-        print (Style.BRIGHT + Fore.BLUE +"[+] received from NODE 1 for NODE 4 through NODE 2." )
+        print (Style.BRIGHT + Fore.BLUE +"[+] received from Sender to Receiver through Relay Node." )
         connect_3_4(chan23)
 
 ## connecting clients
