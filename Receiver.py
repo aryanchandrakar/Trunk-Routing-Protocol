@@ -57,7 +57,7 @@ class MySubscribeCallback(SubscribeCallback):
         msgbyte = msg.encode()
         msgback = msgbyte[2:514]
         bytestr = base64.b64decode(msgback)
-        print(Style.BRIGHT + Fore.BLUE + "[+] Received from NODE 1 through NODE 2,3 received.\n[*] "+msg)
+        print(Style.BRIGHT + Fore.BLUE + "[+] Received from Sender through Relay Nodes received.\n[*] "+msg)
 
         # Decryption layer 1
         print(Style.BRIGHT + Back.WHITE + Fore.BLACK +"[-] Decrypting 1st layer RSA 3072 -")
