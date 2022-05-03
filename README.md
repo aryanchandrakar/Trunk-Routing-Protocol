@@ -3,7 +3,7 @@
 
 We might use Onion Protocol to hide ourselves among several other nodes but the TOR browser itself is installed on our OS and our OS’ collect data regularly about the user, in order to improve the experience or other reasons, while these programs access the internet directly without using any anonymizing protocol or network. Therefore, when these program leaks information they also leak several other information. While the Onion Protocol works on the basis of each node un-wrapping the data till it reaches the final destination, a port listener on the destination can result into adversary fetching the information. 
 
-<center><img src="img/onion.jpg" width></center>
+<center><img src="img/onion.jpg" ></center>
 To work around the same, the project works on developing “The Trunk Protocol”, instead of un-wrapping encryption layer on each node it would work to increase the protection by adding another layer using the public key of the receiver, where finally the receiver node decrypts each layer to achieve the requested data without any threats.
 
 <hr>
@@ -45,3 +45,12 @@ Once the terminals are ready, reach the location where file is saved and run the
 
 The sender's node functions to choose a random route for transferring from a set of nodes on the network, and displays the choosen route on the sender's terminal.
 _(Close the network graph before sending the message)_
+
+### Communicating on the network
+
+A random network route is formed from the set of nodes available on the network to introduce randomness and save from several other threats.
+<center><img src="OUTPUT/graph.jpg" width="50%"></center>
+Once all the nodes are up and running, you would be asked to enter message on the sender's screen with the message being processed output being displaye on each node.
+The AES encrypted message, gets encrypted with another layer of protection on the sender's system and with a base change the shared output message is escaped to hide the user's data fro being reflected anywhere and stop the passing of any special character to compromise in any way.
+<img src="OUTPUT/Sender.jpg" width="50%"><img src="OUTPUT/First Node.jpg" width="50%"><img src="OUTPUT/Second Node.jpg" width="50%">
+The same is repeated in each node but with a different level of protection unitl it finally reached the receiver. 
