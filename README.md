@@ -1,5 +1,4 @@
 # Trunk-Routing-Protocol
-[Under Developement]
 
 We might use Onion Protocol to hide ourselves among several other nodes but the TOR browser itself is installed on our OS and our OS’ collect data regularly about the user, in order to improve the experience or other reasons, while these programs access the internet directly without using any anonymizing protocol or network. Therefore, when these program leaks information they also leak several other information. While the Onion Protocol works on the basis of each node un-wrapping the data till it reaches the final destination, a port listener on the destination can result into adversary fetching the information. 
 
@@ -54,9 +53,27 @@ Once all the nodes are up and running, you would be asked to enter message on th
 The AES encrypted message, gets encrypted with another layer of protection on the sender's system and with a base change the shared output message is escaped to hide the user's data fro being reflected anywhere and stop the passing of any special character to compromise in any way.
 
 [`Sender`](OUTPUT/Sender.jpg)
-
 [`First_Node`](OUTPUT/First%20Node.jpg)
+[`Second_Node`](OUTPUT/Second%20Node.jpg)
 
-[`Second_Node`](OUTPUT/Second Node.jpg)
+The same is repeated in each node but with a different level of protection unitl it finally reached the receiver, where the receiver decrypt the message by removing each layer of security at a time. Each layer removal requires a private key paired to the public key used to encrypt the message, this private key is stored safely with the receiver protected from adversary or other actors who might compromise the model and encryption schemes.
 
-The same is repeated in each node but with a different level of protection unitl it finally reached the receiver. 
+[`Receiver`](OUTPUT/Receiver.jpg)
+
+<hr>
+
+## Analysis
+
+<img src="OUTPUT/computation table.jpg">
+
+All these values including the delays and latency add up to an average of total 0.06268 seconds or 62.68 ms adding the internet latency to the same gives a really small latency of about just 65.68 ms when compared to 725 ms of TOR network.
+
+**Weak Points: -**
+* The client can be compromised
+* Bot Network, all the legitimate nodes are down and the adversary works to form a bot network which would decrease the level of security but still be adequate enough to protect the communication.
+* All the private keys are known to adversary, which has a rare chance of happening. Recommend usage of the same with HTTPS-I in such case.
+
+**Strong Points: -**
+* Each message can be sent through random routes safeguarding from compromised nodes.
+* Choosing few nodes gives faster communication speed and lower latency.
+* Even if one of the private keys is revealed to the adversary, they can’t do anything without other three of the keys.
