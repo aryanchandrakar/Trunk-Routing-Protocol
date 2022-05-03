@@ -66,7 +66,7 @@ The same is repeated in each node but with a different level of protection unitl
 
 <img src="OUTPUT/computation table.jpg">
 
-All these values including the delays and latency add up to an average of total 0.06268 seconds or 62.68 ms adding the internet latency to the same gives a really small latency of about just 65.68 ms when compared to 725 ms of TOR network.
+All these values including the delays and latency add up to an average of total 0.06268 seconds or 62.68 ms adding the internet latency to the same gives a really small **latency of about just 65.68 ms when compared to 725 ms of TOR networ**k.
 
 **Weak Points: -**
 * The client can be compromised
