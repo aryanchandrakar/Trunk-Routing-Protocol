@@ -52,5 +52,11 @@ A random network route is formed from the set of nodes available on the network 
 <center><img src="OUTPUT/graph.jpg" width="50%"></center>
 Once all the nodes are up and running, you would be asked to enter message on the sender's screen with the message being processed output being displaye on each node.
 The AES encrypted message, gets encrypted with another layer of protection on the sender's system and with a base change the shared output message is escaped to hide the user's data fro being reflected anywhere and stop the passing of any special character to compromise in any way.
-<img src="OUTPUT/Sender.jpg" width="50%"><img src="OUTPUT/First Node.jpg" width="50%"><img src="OUTPUT/Second Node.jpg" width="50%">
+
+[`Sender`](OUTPUT/Sender.jpg)
+
+[`First_Node`](OUTPUT/First%20Node.jpg)
+
+[`Second_Node`](OUTPUT/Second Node.jpg)
+
 The same is repeated in each node but with a different level of protection unitl it finally reached the receiver. 
